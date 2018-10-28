@@ -1,4 +1,4 @@
-% jeu = jeu_de_la_vie();
+jeu = jeu_de_la_vie();
 
 
 %%while 1 
