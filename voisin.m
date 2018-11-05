@@ -1,6 +1,7 @@
 function nb_voisin = voisin(game,i,j,taille)
 
     nb_voisin = 0;
+    %%% COMPTE LE NOMBRE DE CASES VIVANTES AUTOUR DE LUI SI ELLE EXISTE
     %%% * * *
     if (possible(i-1,j-1,taille) && game(i-1,j-1) == 1)
         nb_voisin = nb_voisin + 1;
