@@ -2,8 +2,9 @@ function [] = jeu_de_la_vie(taille)
 
     game = remplir_aleatoire(taille);
     tps_pause = 0.001;
+    stable=1;
 
-    while (1)
+    while (stable)
         % COPIE TEMPORAIRE DU TABLEAU POUR APPLIQUER LES MODIFICATIONS
         tmp = game;
         % AFFICHAGE
@@ -22,6 +23,9 @@ function [] = jeu_de_la_vie(taille)
                 end
             end
         end
+        % TEST SI SORTIE
+        if game == code
+            stable=0;
         % MISE A JOUR DU TABLEAU 
         game = tmp;
     end
