@@ -24,8 +24,9 @@ function [] = jeu_de_la_vie(taille)
             end
         end
         % TEST SI SORTIE
-        if game == code
+        if game == tmp
             stable=0;
+        end
         % MISE A JOUR DU TABLEAU 
         game = tmp;
     end
